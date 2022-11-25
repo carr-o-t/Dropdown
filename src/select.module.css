@@ -1,0 +1,138 @@
+.container {
+  position: relative;
+  background-color: white;
+  box-shadow: 1px 1px 8px #7777775e;
+  width: 21em;
+  min-height: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  outline: none;
+  cursor: text;
+  justify-content: space-between;
+}
+
+.container:focus {
+  border-width: 0.125em;
+  border-color: hsl(200, 100%, 20%);
+  transition: all ease 300ms;
+}
+
+.left {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.remove-btn{
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: inherit;
+}
+
+.input {
+  background: none;
+  border: none;
+  color: #1a1a1a;
+  font-size: inherit;
+  max-width: 28ch;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.value {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 0.2em 1em;
+font-size: 10px;
+  border-radius: 100vw;
+  max-width: max-content;
+  width: max-content;
+}
+
+.right {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: end;
+  align-self: stretch;
+}
+.clear-btn {
+  background: none;
+  color: #777;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+.clear-btn:focus,
+.clear-btn:hover {
+  color: #333;
+}
+
+.divider {
+  background-color: #777;
+  align-self: stretch;
+  width: 0.05em;
+}
+
+.arrow-down {
+  translate: 0 25%;
+  border: 0.35em solid transparent;
+  border-top-color: #777;
+  cursor: pointer;
+}
+
+.arrow-down:focus,
+.arrow-down:hover {
+  border-top-color: #1a1a1a;
+}
+.right {
+  cursor: default;
+}
+
+.options {
+  position: absolute;
+  margin: 0;
+  padding: 0.4em;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.5em;
+  text-align: left;
+  max-height: 15em;
+  overflow-y: auto;
+  border-radius: 0.25em;
+  width: inherit;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: white;
+  box-shadow: 1px 1px 8px #7777776b;
+  z-index: 100;
+}
+
+.options.show {
+    padding: 0.25em 0.5em;
+  cursor: pointer;
+    border-radius: 0.4em;
+  display: flex;
+}
+
+.option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+    border-radius: 0.4em;
+}
